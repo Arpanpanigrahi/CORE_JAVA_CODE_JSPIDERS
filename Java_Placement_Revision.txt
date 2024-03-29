@@ -1,0 +1,517 @@
+BASICS
+------------------------------------------------
+1. What is JDK and what components does it include?
+javac, JVM, Java API, Development Tools,
+Java FX, Other Utilities and JAR.
+
+2. Differentiate between JDK, JRE and JVM.
+JDK = JVM + JRE
+JVM = Virtual Machine
+JRE = RunTime Environment
+
+3. Explain the role of the Java Compiler.
+How does it contribute to the Java development process?
+-> Compiler compiles the code
+--> Syntax Checking
+--> Bytecode Conversion
+-> Compiler converts source code to byte code
+-> Optimize the code
+--> Adding additional code (like default constructor)
+
+4. What is bytecode and why it is important in the context 
+of Java programming?
+Bytecode is platform independent.
+
+5. Discuss the importance of BUILDPATH and CLASSPATH.
+
+6. How does Java achieve "Write Once Run Anywhere" with the
+help of JDK and JVM?
+
+7. How can you determine the version of Java installed on a system?
+java -version
+
+8. JAR?
+Java Archieve File.
+
+------------------------------------------------------------
+DATATYPES
+------------------------------------------------------------
+9. What are the primitive data types in Java?
+byte	(when we are dealing with very small value like data transfer)
+short
+int
+long
+double  (double d = 3.6)
+char	(store data in 'A' character)
+float	(float f = 3.6f)
+boolean (used to check True or False)
+
+10. Explain the difference btw primitive data types and 
+reference data types.
+int a = 90 ---> PDT/ in-built
+merchant m = null ---> reference/custom data type
+
+11. What is autoboxing and unboxing in Java?
+Bigger to smaller datatype ---> Typecasting
+
+int ----> Integer --> Autoboxing
+Integer ----> int ---> Unboxing
+
+12. How is a String object different from other primitive
+data types in Java?
+String --> Non primitive datatype.
+
+String x = new string("The Kiran Academy");
+
+13. What is the Significance of the 'final' keyword when applied to a variable 
+in Java?
+--> Final means we can not change.
+
+14. How does the 'instanceof' operator work in Java?
+--> It will check whether the referred object belongs 
+to that type or not.
+
+15. Discuss the role of 'enum' datatypes in Java?
+- The values within an enum are called as constants or enumerators.
+- Each constant is implicitly a public, static, final field of 
+the enum type.
+
+public enum Days{
+	Mon, Tue, Wed, Thur, Fri, Sat, Sun
+      }
+
+16. Can you declare a variable without initializing in Java?
+--> depends.
+
+-----------------------------------------------------------
+if-else
+nested if-else
+
+17. Difference btw == operator and .equals() method
+
+equals() --> content ---> string
+	 --> address ---> Object class
+
+switch
+break
+
+while vs do-while
+
+-----------------------------------------------------------
+PACKAGE
+-----------------------------------------------------------
+18. What is Package in Java and how does it contribute to 
+code organization?
+- Grouping of similar files together.
+Ex - Old Songs and New Songs
+
+19. Explain the significance of package statement in Java?
+package com.thekiranAcademy.custom
+
+20. How do you import a specific class from another package in Java?
+-import
+
+21. Diff. btw import statement and package statement.
+import statement - from where to import
+package statement - where you are
+
+22. How does java handles naming conflict?
+- By creating package.
+
+------------------------------------------------------------
+ACCESS MODIFIERS
+------------------------------------------------------------
+23. What are access modifiers in Java?
+There are 4 access modifiers in Java-
+- public    (They can be accessed anywhere in the project.)
+- private   (only within the same package)
+- default   (are accessible within the same package)
+- protected 
+
+24. List the access modifiers in Java?
+
+25.Explain public access modifier.
+They can be accessed anywhere in the project.
+
+26. Difference btw all access modifiers.
+
+27. Can an interface have access modifiers other than public?
+- NO.
+---------------------------------------------------------------
+CONSTRUCTOR
+---------------------------------------------------------------
+28. What is a constructor in Java?
+- Special method that does not have any return type.
+- Constructor name must be same as class name.
+
+29. How is a constructor different from a method?
+- Because method has a return type. 
+- And method can have any name.
+- Method can be inherited
+- Method can be overridden.
+
+30. Can a class have multiple constructors?
+- YES.
+
+31. Diff. btw default and parametrized constructor.
+
+32. Can a constructor have a return type?
+- NO.
+
+33. How is a constructor invoked in Java?
+A a = new A();
+
+34.What happens if you don't provide a constructor in a class?
+- Automatically JVM will provide as its class name.
+
+35.Can you have both a default and parametrized constructorin the same class?
+- YES.
+
+36. Explain the concept of constructor overloading?
+
+37. Static block?
+
+38. Can a constructor be declared as private?
+- YES.
+
+39. What is the significance of making constructor as private?
+- No one can create object of that class.
+- To achieve singleton design pattern.
+
+----------------------------------------------------------------------
+ENCAPSULATION
+----------------------------------------------------------------------
+40. What is encapsulation?
+- Binding up of data into a single entity.
+
+41. How to achieve encapsulation in Java?
+- By using getter and setter methods.
+
+42. Why is encapsulation needed?
+
+43. What is the role of setters and getters in encapsulation?
+- For getting and setting an value from the global variable.
+
+-----------------------------------------------------------------------
+INHERITANCE
+-----------------------------------------------------------------------
+44. What is Inheritance?
+45. Why do we need inheritance in Programming?
+46. How do we make inheritance happen? 
+- By using extends keyword.
+
+47. Can you explain the "extends" word in an easy way?
+- To add some feature from parent to child for increasing features.
+
+48. What are the types of Inheritance?
+49. Why can't we use multiple inheritance in Java.
+- super()
+- diamond problem
+
+50. Can we do inheritance in Java without saying "extends"?
+- NO.
+
+51. Can we use a parent class as if it's a child class?
+- YES. (Object <---- Parent <---- Child)
+
+52. Do constructors, the private members get passed down in inheritance?
+- NO.
+
+53. How can we stop a class from doing inheritance?
+-  By making any class as a final.
+
+-----------------------------------------------------------------------
+SUPER & THIS KEYWORD
+-----------------------------------------------------------------------
+54. Why do we use "this" keyword in Java?
+- represents current class object.
+- Yes we can call methods or access a variable.
+
+55. What is "super" in Java and how does it differ from "this"?
+- super represents super class object.
+- this represents current class object.
+
+56. Can it be possible to put super() or this() anywhere in Java program?
+- NO. Both at a time should be in the first line of code.
+
+-----------------------------------------------------------------------
+STATIC KEYWORD
+-----------------------------------------------------------------------
+57. What does the static keyword mean?
+- Changeable but storing only one copy into the memory.
+- Even if you create multiple memory.
+- Latest memory will be stored in the memory 
+- and old memory will get deleted.
+
+58. How do you invoke static method?
+- By using a classname.
+
+59. Is it possible to have a static class in Java?
+- NO if we are making Outer class as static..
+- Answer is YES if we are making Inner class as static.
+
+60. Difference btw static and non-static methods?
+- static methods are stored only once,
+- but non-static methods will be stored multiple times as many times we are creating object.
+
+- static methods can be called by using classname.
+- Non-static method can be called by creating an object of that class.
+
+- From non-static methods we can call static methods directly.
+- but from static methods we cannot call non-static methods directly we have to craete object.
+
+61. Can static methods access non-static variables in Java?
+- NO. 
+
+-----------------------------------------------------------------------
+FINAL KEYWORD
+-----------------------------------------------------------------------
+62. What does the final keyword mean?
+- means constant.
+- cannot be changed.
+- For variables we cannot change the value of variables.
+- whereas for methods we cannot be override it.
+- whereas in case of class we cannot extend it.
+
+63. How can you prevent a variable/method/class from being inherited?
+- By making it as final.
+
+64. What is a pure constant in Java?
+- means final static variables.
+- one copy storage and nobody will be changing the value.
+
+65. Can you combine abstract, final, and public keywords in a class decalaration?
+- NO.
+
+66. Is it possible to declare a variable as both final and abstract?
+- NO. bcoz variable cannot be abstract.
+
+67. Can you have static final variables in Java?
+- YES. These variables are called as pure constants.
+
+-----------------------------------------------------------------------
+ABSTRACTION
+-----------------------------------------------------------------------
+68. What is abstraction?
+- Showing only essential features and hiding the unwanted details.
+
+69. Why is abstraction needed?
+
+70. How can we acheive abstraction?
+- By using Interface and abstract class.
+
+71. Why do we use Interfaces?
+- For multiple-inheritance implementation.
+
+72. Why do we use abstract classes?
+- For partial abstraction.
+
+73. Difference btw Interface and abstract class.
+
+74. Which is better an interface or an abstract class?
+
+75. Can you explain constructors in an interface?
+- NO. Constructor not existed in interface.
+
+76. Constructor is there for abstract class.
+
+77. Is it allowed to mark a method as both abstract and final.
+- Not possible.
+
+78. Can we create an instance of an abstract class in Java?
+- NO.
+
+79. How is abstraction different from encapsulation?
+- In abstraction we can hide implementation.
+- Encapsulation means binding of data within single entity.
+
+80.  Do interfaces allow multiple inheritance? Why?
+- YES. 
+
+81. Can we declare an abstract method as static?  - NO.
+82. Can we declare an abstract method as private? - NO.
+
+83. All access modifiers we can use with Abstract method.
+
+-----------------------------------------------------------------------
+POLYMORPHISM
+-----------------------------------------------------------------------
+84. What is Polymorphism.
+85. Why you need polymorphism.
+- To behave differently at different instant of time.
+- Like mother see is cooking food, taking care, etc.
+
+86. What is method overloading?
+- Same method name but different argument.
+- No need of inheritance.
+- No restrictions for access modifiers.
+- No restrictions for Return Type.
+
+
+87. What is method overriding?
+- Same method name and argument of super class in the subclass.
+- Inheritance is must.
+- Must be bigger.
+- Same or covariant - ReturnType.
+
+88. Real Life example.
+
+89. Diff. btw Compile time and Run time polymorphism.
+
+90. Can polymorphism be achieved without using inheritance?
+- YES. Incase of method overloading.
+- NO. Incase of method overriding.
+
+91. Method can be overriden.
+    Constructor cannot be overriden.
+
+92. Constructor can be overloaded.
+
+-----------------------------------------------------------------------
+STRING
+------------------------------------------------------------------
+1. Difference btw String, StringBuffer and StringBilder in Java?
+- String is Immutable
+- StringBuffer and StringBilder are Mutable.
+
+- StringBuffer has all synchronized methods.
+
+2. Explain the immutability concept of String in Java?
+
+3. How does StringBuffer differ from StringBuilder in terms of 
+Synchronization?
+- StringBuilder is faster. 
+- because it is synchronized & thread safe.
+
+4. Explain the role of intern() in String class?
+- intern() is used to retrieve something from String memory.
+
+5. What is the default capacity of newly created StringBuilder in Java?
+- 16 characters (For both StringBuilder and StringBuffer)
+
+6. Explain String Constant Pool?
+7. How to Reverse a string.
+8. How can you check if two string objects have the same content
+in Java?
+- equals() which checks the content.
+
+9. Difference btw == operator and equals() method in Java?
+- == operator checks address.
+- equals() which checks the content.
+
+10. Can you list some methods of String class?
+-toChar(), toUppercase(), toLowerCase(), substring(), toString(), 
+length(), etc. 
+
+------------------------------------------------------------------
+EXCEPTION HANDLING
+------------------------------------------------------------------
+1. What is the definition of an exception in Java?
+- Any abnormal condition in the program is called an exception.
+
+2. Describe the purpose of try block.
+- If there is some exception then we will write in that.
+- In future if some exception will occur.
+
+3. Significance of catch block.
+
+4. Significance of finally block.
+- It will get executed always.
+
+5. Use of throw and throws keyword.
+- throw is used inside a method.
+- throws is used outside of method.
+
+- throw - object of exception class.
+- throws - exception class.
+
+6. Diff btw Compile-time and Run-time exceptions in Java.
+- Both exception occurs at RunTime.
+- But compileTime will give compiletime error 
+if those are not handled while coding.
+
+7. Define checked and unchecked exception.
+- checked exception - called as compile time exception
+- unchecked exception - called as run time exception.
+
+8. try-catch-finally block.
+
+-------------------------------------------------------------------------------------
+ARRAY
+------------------------------------------------------------------
+1. Diff. btw Array and Array List.
+- Length is fixed in Array.
+- Not fixed in Array List.
+
+- Same datatype in Array.
+- Different datatype in Arraylist.
+
+- Array is not Growable.
+- Array List is Growable.
+
+- Array is not completely Object oriented.
+- Array List is completely Object oriented.
+
+- Array is not a class.
+- Array List is a class.
+
+2. How to initialize an Array.
+- int a[] = {_,_,_,_}
+- int a = new int[4]
+
+3. Explain the role of the length property in array.
+
+------------------------------------------------------------------
+COLLECTION FRAMEWORK
+------------------------------------------------------------------
+1. Diff. btw ArrayList, Vector and Linked List.
+2. Diff. btw HashSet and LinkedHashSet.
+- HashSet:
+-Randomly allocated.(- Order will not be maintained.)
+- duplicates are not allowed.
+
+- LinkedHashSet:
+- It uses DoubleLinkedList.
+- Order will be maintained.
+
+3. Diff. btw HashSet, TreeSet and LinkedHashSet.
+- HashSet: Duplicates are not allowed.
+- TreeSet: Sorting.
+- LinkedHashSet: Maintain Order.
+
+4. Diff. btw HashMap and TreeMap.
+- HashMap will store all the element randomly.
+- TreeMap will store as per the sorting order.
+
+5. Diff. btw HashMap and HashTable.
+- Null keys and null values are not allowed in HashTable.
+- whereas in HashMap it is allowed.
+
+- HashTable is synchronized and legacy class.
+
+6. Diff. btw HashMap, HashTable and TreeMap.
+
+------------------------------------------------------------------
+GARBAGE COLLECTIONS
+------------------------------------------------------------------
+1. Explain the purpose of Garbage Collection in Java?
+
+------------------------------------------------------------------
+MULTITHREADING
+------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
