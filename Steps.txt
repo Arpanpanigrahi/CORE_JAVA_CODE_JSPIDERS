@@ -1,0 +1,174 @@
+cd server
+npm install
+node main (node filename)
+split terminal --> (cmd)
+cd Client
+npm install
+set NODE_OPTIONS=--openssl-legacy-provider
+ng serve
+click on link
+
+------------------------------------------------
+cd Client
+ng serve
+set NODE_OPTIONS=--openssl-legacy-provider
+ng serve
+
+
+-------------------------------------------------
+
+					Hibernate Project
+					-----------------
+Project Name : school-hibernate-app
+Database Name : school-management
+
+Package Name:
+com.jsp.dto/entities
+com.jsp.dao
+com.jsp.util
+com.jsp.controller
+
+Methods-->
+
+Inside com.jsp.dao create a class SchoolDao.java
+
+sameSchool(School school)
+getSchoolById(int id)
+getSchoolByName(String name)
+getAllSchools()
+deleteSchoolById()
+updateSchool(School school)
+
+------------------------------------------------------
+
+TeacherDao (Inside this create classes as mentioned below)
+----------
+
+SubDao
+StudentDao
+ClassRoom
+PrincipalDao
+
+-------------------------------------------------------
+		Java YouTube
+		-------------
+CodeDecode
+JavaGuides
+
+
+
+--------------------------------------------------------------------------------------------
+Number Program / Pattern --> Any One
+1 String Program
+1 Sorting Program  ---> Quick Sort Mainly
+DSA -->
+	ArrayList (Difference, Operation)
+	Queue & Stack Any one implementation
+	LinkedList
+
+What is Abstarction?
+What is Interface / Marker/ Functional
+Encapsuation 
+Q> How we are hiding data?
+A> By using setter() and getter() we can set the value.
+   If we made any changes also it will not affect user code.
+   By using Encapsulation we can have complete control over the class.
+
+Final Keyword
+Inheritance
+Method Overriding  --> Same method name with same arguments in super class and subclass.
+		       IS-A relationship is mandatory.
+		       If you are not interested in the implementaion provided by the super class in subclass we can override those methods in subclass and 
+		       we can provide implementation in subclass.
+
+String Immutable --> If we create a string by using Literals it will store in SCP.
+		     SCP will not allow duplicates.
+		     And if we store by using new keyword it will store in the heap area.
+		     One string object can be reffered by multiple references and if we made any changes in one object it will affect another object.
+		     So String is Immutable we cannot change the String data.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+prime no recurssion
+lambda expression demonstrate
+
+--------------------------------------------------------------------------------------------
+Link: https://www.youtube.com/watch?v=quUZ2dxhEvU
+
+Java Basics 
+------------
+
+- About Java
+	- What is Java, Features, Uses
+
+-JDK, JRE and JVM
+	- Differences
+
+- Datatypes, Variables and Operators
+	- Types, Default Values, Programming Questions
+
+- Loops and Conditions
+	- do, while, do-while, if, if-else, nested if, switch
+
+- Arrays
+	- default values, how values are stored, programming questions
+
+- Constructors
+	- Types, Rules, Copy Constructor, Private Constructor, Constructor overloading
+
+- Strings
+	- String Object Creation, SCP, Immutable, String buffer, String Bulider and differences
+
+- Access Modifier
+	- public, private, default, protected
+
+- Packages
+	- How packages are accessed, in-built packages, user-defined
+
+- Keywords
+	- static, final, volatile, synchronized, this, super
+
+Advance Java
+------------
+
+- Exception Handling
+	- types, try-catch-finally, throw, throws
+
+- Collection Framework
+	- List, Set, Map (internal working), Queue
+
+- Serialization and De-Serialization
+	- implementation, differences, serialVersionUID, methods, transient
+
+- MultiThreading
+	- Thread, Types, Lifecycle, Inter-thread communication (notify and notifyAll)
+
+- Garbage Collection
+	- Working, need, methods, finalize
+	- Difference between final, finally and finalize
+
+- Synchronization
+	- Need, Synchronized methods, block, static synchronization
+
+- Java 8
+	- Lambda expression, Functional Interface, Static and default methods in interface, Streams, Method references
+
+OOPS Concept
+-------------
+- Class
+- Object
+- Implementation
+- Use
+- Types
+- Method Overloading
+- Method Overriding
+- Rules
+- Abstraction
+- Polymorphism
+- Inheritance
+- Encapsulation
+- Interface and Abstract Class
+- Association
+- Composition
+
+
